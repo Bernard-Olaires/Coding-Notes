@@ -1,0 +1,210 @@
+
+<!-- typing ! and then enter will automatically set doc type
+
+    <head> </head> = Part of HTML file that holds information about the web page and tells browser how to handle page
+
+    <meta> = give extra meta data or associated data to HTML document. We are telling the browser when it open up file
+    that the text inside the webpage is in coded using "utf-8" encoding system
+
+    "utf-8" = (standard encoding for HTML 5) Contains different characters that we can use to effectively render. Includes 
+    international symbols or unicode characters. 
+
+-->
+
+<!DOCTYPE html> <!-- This declares the language of the page-->
+<html lang="en"> <!-- Tells us what language english vs french-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Auto adjust to all screens-->
+    <title>HTML Notes</title>
+</head>
+<body>
+
+    <!-- SYNTAX 
+
+    <p> Example of paragraph </p>
+    ^opening tag               ^closing tag
+    
+    
+    
+    
+    -->
+
+
+
+    <!-- Heading tags <h1> -->
+
+    <h1> This is Heading 1 </h1>
+
+    <!-- Heading tags can range from 1-6, 1 being the largest text-->
+
+    <h1>Most important</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>least important header</h6>
+
+
+    <!-- Paragraph Element Tag <p> -->
+
+    <p> This is an example of a paragraph element</p>
+
+    <!--Hyperlink Tag <a> -->
+    
+    
+    <p>Example of hyperlink: </p>
+    <a href="http://login.codingdojo.com">Learn Platform</a>
+
+    <!-- "href" is an important attribute to the hyperlink tag-->
+
+    <!-- Emphasis and Strong tags <em> and <strong>-->
+    
+    <p>Example of emphasis and Strong Tags:</p>
+    <p><em>This</em> is an <strong>example!</strong></p>
+
+    <!-- Unordered (bullet) list:<ul> is nested <li> that contain the list item-->
+        <p>Example of unordered list (bullets):</p>
+        <ul>
+            <li>Dog</li>
+            <li>Cat</li>
+            <li>Dragon</li>
+            <li>Monkey</li>
+        </ul>
+        
+
+    <!-- Ordered (numbered) list:<ol> is nested <li> that contain the list item-->
+
+        <p>Example of ordered list (numbered):</p>
+        <ol>
+            <li>Dog</li>
+            <li>Cat</li>
+            <li>Dragon</li>
+            <li>Monkey</li>
+        </ol>
+        
+    
+    <!--Tables:<table> with nested <tr> (table rows)that contain nested <th> or <td> for header and regular data cells-->
+        <p>Example of table tag:</p>
+
+        <table border="1">
+
+            <tr>
+                <th>Movie</th>
+                <th>Year</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Up</td>
+                <td>2009</td>
+                <td>PG</td>
+            </tr>
+            <tr>
+                <td>The Matrix</td>
+                <td>1999</td>
+                <td>R</td>
+            </tr>
+        </table>
+
+    <!-- Image tag <img> has important attributes: <src>(image file path) and <alt>(description or title of image)-->
+    <p>Example of image tag:</p>
+    <img src="/Users/bolairesjr/Desktop/Basic HTML/images/Image Example.jpeg" alt="panda pic">
+
+    <br>
+
+    <!-- Video <video> has important tag <src> (video path) and <controls> (adds controls)-->
+        <video src="monkey2.mp4" controls></video>
+
+    <!-- if we wanted to auto play on modern browsers, we need to include autoplay, loop, and muted-->
+    <video src="monkey2.mp4" autoplay loop muted></video>
+
+    <!-- Forms -->
+
+    <p> Example of input form: </p>
+    <input type="text" name="first_name">
+
+    <br>
+
+    <p> Example of number Input: </p>
+    <input type="number" name="age">
+
+    <br>
+
+    <p> Example of Password Input: </p>
+    <input type="password" name="password">
+
+    <br>
+
+    <p> Example of Date Input: </p>
+    <input type="date" name="dob">
+        <!-- Date input is not supported in all browsers-->
+    
+    <br>
+
+    <p> Example of color Input: </p>
+    <input type="color" name="text_color">
+
+    <br> 
+
+    <p> Example of radio Input: </p>
+    <input type="radio" name="font" value="bold" id="bold">
+    <label for="bold"><strong>Bold</strong></label>
+    <input type="radio" name="font" value="normal" id="normal">
+    <label for="normal">Normal</label>
+
+    <br>
+
+    <p> Example of Checkbox Input</p>
+    <input type="checkbox" name="accept" id="accept">
+    <label for="accept">I agree</label>
+
+    <br>
+
+    <p> Example of Textarea Input: </p>
+    <textarea name="comment" cols="20" rows="3"></textarea>
+
+    <br>
+
+    <p> Example of Select Input:</p>
+    <select name="snack">
+        <option>Almonds</option>
+        <option>Cheese and Crackers</option>
+        <option>Pita and Hummus</option>
+        <option>Pears</option>
+    </select>
+    
+    <br>
+
+    <p> Example of a typical Form:</p>
+    <form action="/process" method="post">
+        <div>
+            <label>Name: </label>
+            <input type="text" name="name" 
+            placeholder="Your name..." >
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="text" name="email" 
+            placeholder="Your email..." >
+        </div>
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">I would like 
+            to receive email offers!</label>
+        </div>
+        <input type="submit" value="Sign Up!" >
+    </form>
+    
+
+    
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+.red {
+    color: red
+}
+
+.center {
+    text-align: center;
+}
+
+.green {
+    background-color: black; 
+    color: green; 
+    
+}
+
+#blue {
+    color:blue;
+}
+
+
+
+
+
+h1 {
+    color: rebeccapurple;
+}
+.green {
+    color: mediumseagreen;
+}
+#red {
+    color: tomato;
+}
+
+/* Example of descendant selector */
+
+
+.quote p {
+    color: darkslategrey;
+    font-style: italic;
+}
+
+input {
+    padding: 5px;
+    border-color: rebeccapurple;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid rebeccapurple;
+}
+
+
+/* Atribute Selector */
+
+input[type="submit"] {
+    color: white;
+    background-color: rebeccapurple;
+}
+
+/* Color vs Background Color */
+
+#color{
+    color: cyan; /* color = color of text */
+    background-color: grey; /* background-color = color of background */
+}  
+
+/* text alignment
+
+text:-align: left;  =  align text to the left
+
+text-align: center; = align text to the center
+
+text-align: right; = align text to the right
+
+
+*/
+
+/* Text Decoration / font style / font weight
+
+text-decoration: underline; = underlines text 
+
+text-decoration: line through; = puts line through text 
+
+text-decoration: none; = no decoration
+
+font-style: italic; = changes font to italic
+
+font-style: normal; = normal font 
+
+font-weight: normal; = makes text font normal
+
+font-weight: light: = makes text lighter
+
+font-weight: bold; = makes text bold
+
+font-family: (name); = makes font different font 
+*/
+
+
+/* Box Model */
+
+#container {
+    background-color: rgb(128, 128, 128);
+    width: 960px;
+    /* overflow: hidden;
+    height: auto; */
+}
+
+#box-1, #box-2, #box-3{
+    background-color: rgb(0, 128, 0);
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 20px;  /* used to create space around elements, outside of any defined borders */
+    padding: 20px; /* used to create space around elements content, inside of any defined borders */
+}
+
+#box-1, #box-2, #box-3{
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+

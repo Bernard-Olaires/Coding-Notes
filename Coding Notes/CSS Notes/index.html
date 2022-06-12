@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Notes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+    <body>
+        <h1>This Text is with no style</h1> 
+        <h1 class="red">This text should be red</h1> 
+        <!-- ^ to stype specific element you need to add a class
+            example class="green". Class should not have any spaces,
+            use - ex. red-red
+
+        -->
+
+        <!--
+            class = "." in css
+            id= "#" in css
+
+        -->
+        
+        <p>This paragraph should be aligned to the left.</p>
+
+        <p class="center">This text should be aligned to the center.</p>
+
+        <p class="green">This text should be green with background black.</p>
+        
+        <p id="blue">This text is an example of "id" in CSS and should
+            be blue.
+        </p>
+
+        <!-- Selector Specify
+            elements such as <h1> or <p> has strength of 1
+            class or "." has a strength of 10
+            id or "=" has a strength of 100
+            example down below:
+        -->
+        
+        <h1 id="red" class="green">Hello World</h1>
+        <!-- the id red will be the one CSS uses due to the strength-->
+
+
+        <!--Example of descendant selector-->
+
+        <p>This is a quote about CSS</p>
+        <div class="quote">
+            <p>"CSS is like chess. You learn the basics in a day and spend a lifetime mastering it."</p>
+        </div>
+        <p>Chris Coyier (css-tricks.com)</p>
+
+        <!--Attribute Selector-->
+
+        <form action="/process" method="post">
+            <input type="text" name="username" value="Rebecca">
+            <input type="submit" value="Enter Username">
+        </form>
+
+
+        <!-- Color vs Background Color-->
+
+        <h1 id="color">Coding Dojo</h1>
+
+        <!-- Box Model -->
+
+        <p>EXAMPLE OF BOX MODEL:</p>
+
+        <br>
+
+        <div id="container">
+            <div id="box-1">Box-1
+            </div>
+            <div id="box-2">Box-2
+            </div>
+            <div id="box-3">Box-3
+            </div>
+            <div class="clear">
+            </div> <!-- Same as overflow:hidden ;
+                                height: auto;-->
+        </div>
+
+    </body>
+</html>
