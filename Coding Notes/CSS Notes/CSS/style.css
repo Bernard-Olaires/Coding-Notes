@@ -121,3 +121,45 @@ font-family: (name); = makes font different font
     clear: both;
 }
 
+/* Inline and Block */
+
+h1, h2 {
+    display: inline-block;
+    background-color: cyan;
+    width: 200px; /* this will work! */
+}
+
+label, input {
+    display: block;
+}
+
+/* inline block colums */
+
+.p {
+    display: inline-block;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: lightcyan;
+    margin: 10px;
+}
+
+/* colums contiuned */
+
+.pc {
+    display: inline-block;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: lightgreen;
+    margin: 10px;
+    vertical-align: bottom;
+}
+
+.a {
+    text-decoration: none;
+    color: darkslategrey;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: 10px;
+}
