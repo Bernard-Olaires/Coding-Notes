@@ -228,7 +228,7 @@ label, input {
     align-items: center;
 }
     
-.col {
+.coll {
     width: 220px;
     padding: 10px;
     background-color: blanchedalmond;
@@ -297,4 +297,27 @@ label, input {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/* flex: 1 */
+
+/* 
+Flex: 1 gives a percentage of space. 
+*/
+.row {
+    display: flex;
+}
+.col, .col-2, .col-3 {
+    flex: 1; 
+    padding: 20px;
+    margin: 10px;
+    background-color: lightcyan;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
 }
