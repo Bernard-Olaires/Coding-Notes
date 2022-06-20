@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- JS example of button click using periodic elements -->
+    
+    <h1>Click to learn the elements!</h1>
+    <div class="element" onclick="displayName('Hydrogen')">
+        <h3>H</h3>
+        <p>1.008</p>
+    </div>
+    <div class="element" onclick="displayName('Helium')">
+        <h3>He</h3>
+        <p>4.00</p>
+    </div>
+    <div class="element" onclick="displayName('Lithium')">
+        <h3>Li</h3>
+        <p>6.941</p>
+    </div>
+
+    <!-- JS Example of (this) -->
+    <button onclick="example(this)">
+        Click Me
+    </button>
+
+    <!-- JS example of (this) and .innertext property -->
+
+    <button onclick="turnOff(this)">On</button>
+    <button onclick="turnOff(this)">On</button>
+    <button onclick="turnOff(this)">On</button>
+
+
+
+    <!-- we need to use <script> tag to link to JS  and on the bottom of the page-->
+    <script src="./script.js"></script> 
+
+</body>
+</html>
