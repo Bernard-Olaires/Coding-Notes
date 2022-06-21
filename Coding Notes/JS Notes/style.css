@@ -1,3 +1,15 @@
+/* header */
+
+
+h1 {
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+
+
+/* periodic tables */
 .element {
     border: 1px solid #333;
     box-shadow: 4px 4px 4px #999;

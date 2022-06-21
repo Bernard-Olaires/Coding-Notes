@@ -1,14 +1,22 @@
-//JS example of button click using periodic elements
+//example of button click and showing to console
 function displayName(elementName) {
     console.log(elementName);
 }
 
-//JS Example of (this)
+//Example of (this)------------------------------------------
+
+// console log "click me"
 function example(element) {
     console.log("element clicked", element);
 }
 
-//JS example of (this) and .innertext property
+//changing button name when clicked 
 function turnOff(element) {
     element.innerText = "Off";
+}
+
+//hiding a button 
+
+function hide(element) {
+    element.remove();
 }
