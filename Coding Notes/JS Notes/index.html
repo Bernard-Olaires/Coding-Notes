@@ -52,12 +52,25 @@
 
         <button onclick="hide(this)">Hide Me</button>
 
+        <!-- hoover -->
+
+        <h2 class="hoover">Dojo Notes</h2>
+            <div class="row">
+                <div class="note" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">I am a note</div>
+                <div class="note" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">I am a note</div>
+                <div class="note" onmouseover="addShadow(this)">I am a note</div>
+                <div class="note" onmouseover="addShadow(this)">I am a note</div>
+            </div>
+
+        <!-- hoover continued -->
+        <h2>Mouse Over</h2>
+        <div class="block" onmouseover="over(this)" onmouseout="out(this)"></div>
+
+        
+
 
 
         <!-- we need to use <script> tag to link to JS  and on the bottom of the page-->
         <script src="./script.js"></script> 
-
-
-
     </body>
 </html>

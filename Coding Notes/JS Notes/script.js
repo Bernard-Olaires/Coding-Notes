@@ -20,3 +20,24 @@ function turnOff(element) {
 function hide(element) {
     element.remove();
 }
+
+//hover
+
+function addShadow(element) {
+    element.classList.add("shadow");
+}
+
+function removeShadow(element) {
+    element.classList.remove("shadow");
+}
+
+
+//hoover continued
+
+function over(element) {
+    alert("mouseover");
+}
+
+function out(element) {
+    alert("mouseout")
+}
