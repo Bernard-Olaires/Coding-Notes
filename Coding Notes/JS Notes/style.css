@@ -58,3 +58,27 @@
     background-color: silver;
     border: 1px dotted black;
 }
+
+/* QuerySelector */
+
+#count {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px;
+}
+
+/* changing html css */
+
+#animal {
+    height: 200px;
+}
+
+.btn {
+    height: 30px;
+    width: 70px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 4px 4px #222;
+}
