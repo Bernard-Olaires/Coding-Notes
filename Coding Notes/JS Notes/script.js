@@ -219,3 +219,5 @@ while(start <= end) {
     end--;
 }
 
+// practice
+console.log(8%3)
