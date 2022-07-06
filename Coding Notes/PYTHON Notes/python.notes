@@ -1,0 +1,17 @@
+Code block - is a set of lines of code that belong together
+def(functions)
+if, elif, else (conditional statments)
+for, while (loops)
+class (classes)
+
+Primitive Types:
+    - Numbets, String, Booleans
+
+Composite Types:
+    - List, Dictionaries, Tuples
+
+Common Functions
+    - print(), len(), type()
+
+
+
