@@ -677,3 +677,145 @@ be_cheerful(name="michael", repeat=5)
 # NOTE: argument order doesn't matter if we are explicit when sending in our arguments!
 # output: good morning kb (repeated on 3 lines)
 be_cheerful(repeat=3, name="kb")
+
+# --------------------------------------------------------------------
+
+# - Dictionary - 
+
+#  A dictionary is another muytabe squence tyoe that can store any number of python objects, including 
+# other squence types. Dictionaries consist of pairs (called items) of keys and corresponding values
+        
+        # a dictionary is an unordered collection of objects
+        # values are accessed using a key (typically a string)
+        # a dictionary can shrink or grow as needed
+        # the contents of dictionaries can be modified 
+        # dictionaries can be nested
+        # sequence operations such as slice cannot be used with dictionaries
+
+    # - Keys -
+        # - keys are typically strings
+        # - keys are not in any sort of order, as dictionary values are not tored in seq in memory
+        # - Dictinaries only have keys
+    
+    # - Indexes - 
+        # indexes are always integers
+        # indexes are ordered (least to greates) as list and tuple values are stored squentually in memory
+        # dictionaries do not have indexes
+
+
+# - Creating Dictionaries -
+
+# dictionaries are enclosed by {}
+
+#literal notation
+person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+capitals = {} #create an empty dictionary
+
+
+# - Adding New Key-Value Pairs - 
+
+# dictionaries do not have a .append() method. You can add new values by setting a new key much like you would a variable
+
+#literal notation
+person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+capitals = {} #create an empty dictionary then add values
+capitals["svk"] = "Bratislava"
+capitals["deu"] = "Berlin"
+capitals["dnk"] = "Copenhagen"
+
+# - Dcitionary syntax - 
+#   my_dict["some_string"] = some_value
+
+# --------------------------------------------------------------------
+
+
+# - Dictionary Manipulaion - 
+
+
+person = {
+    "first": "Bernard",
+    "last": "Olaires",
+    "age": 29,
+    "is_organ_donor": True
+}
+
+person["email"] = "bolairesjr@gmail.com" #you just add assign a new key value
+print(person)
+
+# you cannot have two of the same keys
+
+person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+# Adds a new key value pair for email to person
+person["email"] = "alovelace@codingdojo.com"
+        
+# Changes person's "last" value to "Bobada"
+person["last"] = "Bobada" 
+print(person)
+
+# -Testing for an Existing Key - 
+
+if "email" not in person:
+    person["email"] = "newemail@email.com"
+else:
+    print("Would you like to replace your existing email?")
+
+print(person)
+
+# - Accessing Values - 
+# To access the values of a dictionary, 
+# you can use the familiar square brackets along with the key to obtain its value.
+
+#
+
+# - Removing Values -
+
+value_removed = capitals.pop('svk') # will remove the key 'svk' and return it's value
+del capitals['dnk'] # will delete the key, and not return anything
+
+
+# --------------------------------------------------------------------
+
+# - Loops & Dictionaries - 
+
+my_dict = { "name": "Noelle", "language": "Python" }
+for each_key in my_dict:
+    print(each_key)
+# output: name, language
+
+
+my_dict = { "name": "Noelle", "language": "Python" }
+for each_key in my_dict:
+    print(my_dict[each_key])
+# output: Noelle, Python
+
+
+
+# --------------------------------------------------------------------
+
+# - NESTED DICTIONARIES & LIST -
+
+# - Nesting - 
+
+# List of dictionaries
+users = [
+    {"first": "Ada", "last": "Lovelace"}, # index 0
+    {"first": "Alan", "last": "Turing"}, # index 1
+    {"first": "Eric", "last": "Idle"} # index 2
+]
+
+print(users[0]["last"]) # prints Lovelace
+
+# Dictionary of lists
+resume_data = {
+    #        	     0           1           2
+    "skills": ["front-end", "back-end", "database"],
+    #                0           1
+    "languages": ["Python", "JavaScript"],
+    #                0              1
+    "hobbies":["rock climbing", "knitting"]
+}
+
+print(resume_data["skills"][1])
+print(users[2]["first"])
+
+
